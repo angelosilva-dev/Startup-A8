@@ -1,0 +1,255 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* **************Cabeçalho do Site******************** */
+header#cabecalho nav div#navbarSupportedContent ul li a{
+    color: #fd8ab1;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-right: 15px;
+}
+    header#cabecalho nav div#navbarSupportedContent ul li a:hover{
+        color: #ea6b85;
+    }
+
+header#cabecalho nav div#navbarSupportedContent a#btn-transparente, 
+header#cabecalho nav div#navbarSupportedContent a.btn-azul,
+main#conteudo-principal a.btn-azul,section#ultimas-noticias a.btn-azul,
+section#depoimentos a.btn-azul
+{
+    border-radius: 15px;
+    padding: 1px 35px 1px 35px;
+    border: solid 3px #0070b5;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+header#cabecalho nav div#navbarSupportedContent a#btn-transparente{
+    color: #0070b5;
+}
+    header#cabecalho nav div#navbarSupportedContent a#btn-transparente:hover{
+        background-color: whitesmoke;
+    }
+header#cabecalho nav div#navbarSupportedContent a.btn-azul,
+main#conteudo-principal a.btn-azul
+{
+    background-color: #0070b5;
+}
+
+/* **********Conteudo principal********* */
+main#conteudo-principal{
+    background: url('../img/wave-blue.png') repeat-x bottom;
+}
+main#conteudo-principal img#titulo-img{
+    margin: 80px 0 40px 0;
+    width: 500px
+}
+main#conteudo-principal h3, section#ultimas-noticias h3, section#banner1 h3,
+section#companias .conteudo-compania h3, section#depoimentos h3, footer#rodape h3{
+    color: #ea6b85;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+main#conteudo-principal p, section#ultimas-noticias p, 
+section#companias .conteudo-compania p, section#depoimentos p
+{
+    color: #0070b5;  
+    font-weight: bold;  
+    font-size: 0.8em;
+}
+
+/* **********Seção - O que fazemos********** */
+section#o-que-fazemos{
+    background: url(../img/bg-banner.png);
+    padding: 80px 0 140px 0;
+    margin-top: 0px;
+    text-align: center;
+}
+
+section#o-que-fazemos h4{
+    color: #fcc74d;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+section#o-que-fazemos h2, section#banner1 h2, section#banner2 h2{
+    color: white;
+    font-size: 4.5em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+section#o-que-fazemos p{
+    color: white;
+    font-weight: bold;
+    font-size: 0.8em;
+    padding: 0 100px 0 100px;
+}
+section#o-que-fazemos span.span-yellow{
+    color: #ea6b85 ;
+    font-weight: bold;
+    background: #fcc74d;
+    border-radius: 50%;
+    padding: 5px 20px;
+}
+
+/* *********** Ultimas noticias ************ */
+section#ultimas-noticias{
+    padding: 90px 0 90px 0;
+}
+section#ultimas-noticias img#titulo-noticias{
+    margin-bottom: 60px;
+}
+
+section#ultimas-noticias img.img-news{
+    width: 320px;
+    height: 310px;
+}
+
+section#ultimas-noticias div.caixa-noticiais{
+    padding: 0 10px 0 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* **********Seção Banners************ */
+
+section#banner1{
+    background: url('../img/bg-wave.png') repeat-x bottom,
+                url('../img/bg-yellow.png');
+    padding-top: 120px ;
+}
+
+section#banner1 img.img-banners{
+    height: 610px;
+    margin-top: -80px;
+}
+section#banner1 p{
+    color: white;
+    font-weight: bold;
+    font-size: 0.8em;
+    padding-right: 130px;
+}
+section#banner1 a#btn-azul {
+    width: 140px;
+    border-radius: 15px;
+    padding: 1px 35px 1px 35px;
+    border: solid 3px white;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: white;
+}
+
+section#banner1 div.caixa-banner{
+    text-align: left;
+    margin-top: 80px;
+}
+
+/* ************Seção Companias****** */
+section#companias{
+    padding: 30px 0 30px 0;
+
+}
+section#companias p.parafrafo-topo{
+    width: 600px;
+    color: #0070b5;
+    font-weight: 600;
+    font-size: 0.9em;
+
+}
+section#companias .caixa-companias{
+    padding: 20px;
+}
+
+section#companias .conteudo-compania{
+    padding: 10px 40px 10px 40px
+}
+section#companias .conteudo-compania a.btn-transparente{
+    border-radius: 15px;
+    padding: 1px 35px 1px 35px;
+    border: solid 3px #0070b5;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+/* ******** Seção Banner 2 ******** */
+section#banner2{
+    background:url('../img/wave-yellow.png') repeat-x bottom,
+               url('../img/bg-banner.png');               
+}
+
+section#banner2 p{
+    color: white;
+    font-size: 0.8em;
+    font-weight: 700;
+}
+section#banner2 h3{
+    color: #ea6b85; 
+}
+section#banner2 a{
+    border-radius: 15px;
+    padding: 1px 15px 1px 15px;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: #0070b5;
+    background: white;
+}
+
+/* ****** Seção Depoimentos ****** */
+section#depoimentos{
+    padding: 150px 0 150px 0;
+    background: url('../img/wave-blue-footer.png') repeat-x bottom;
+}
+
+section#depoimentos img{
+    margin-bottom: 40px;
+}
+
+/* **********Seção FAQs************ */
+section#faqs{
+    background: url('../img/bg-faqs.png');
+    padding: 70px 0 70px 0;            
+}
+
+section#faqs h2{
+    color: #fbc447;
+    font-size: 4em;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+section#faqs h5{
+    color: white;
+    font-weight: 700;
+    font-size: 0.9em;
+}
+section#faqs hr{
+    background-color: white;
+}
+section#faqs p{
+    color: white;
+    font-weight: bold;
+    font-size: 0.8em;
+    margin-bottom: 60px;
+}
+
+/* *********Seção Rodapé*********** */
+footer#rodape{
+    padding: 70px 0 70px 0;
+    background: url('../img/wave-blue-footer.png') repeat-x bottom;
+}
+
+footer#rodape ul{
+    margin: 20px 0 20px 0 ;
+}
+footer#rodape ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+footer#rodape p{
+    color: #0070b5;
+    font-size: 0.8em;
+}
