@@ -101,11 +101,6 @@ section#ultimas-noticias img#titulo-noticias{
     margin-bottom: 60px;
 }
 
-section#ultimas-noticias img.img-news{
-    width: 320px;
-    height: 310px;
-}
-
 section#ultimas-noticias div.caixa-noticiais{
     padding: 0 10px 0 10px;
     text-align: center;
@@ -117,13 +112,9 @@ section#ultimas-noticias div.caixa-noticiais{
 section#banner1{
     background: url('../img/bg-wave.png') repeat-x bottom,
                 url('../img/bg-yellow.png');
-    padding-top: 120px ;
+    padding: 60px 0 60px 0 ;
 }
 
-section#banner1 img.img-banners{
-    height: 610px;
-    margin-top: -80px;
-}
 section#banner1 p{
     color: white;
     font-weight: bold;
@@ -141,18 +132,13 @@ section#banner1 a#btn-azul {
     color: white;
 }
 
-section#banner1 div.caixa-banner{
-    text-align: left;
-    margin-top: 80px;
-}
-
 /* ************Seção Companias****** */
 section#companias{
     padding: 30px 0 30px 0;
 
 }
 section#companias p.parafrafo-topo{
-    width: 600px;
+    width: 100%;
     color: #0070b5;
     font-weight: 600;
     font-size: 0.9em;
@@ -253,3 +239,46 @@ footer#rodape p{
     color: #0070b5;
     font-size: 0.8em;
 }
+
+/* ******CONFIGURAÇÃO DE MEDIA QUERIES - BREAKPOINTS******* */
+
+/* Dispositivos extra small (telefones em modo retrato, com menos de 576px) */
+@media (max-width: 575.98px) {
+    section#o-que-fazemos h2, section#banner1 h2, section#banner2 h2{
+        font-size: 2em;
+    }
+    section#o-que-fazemos{
+        padding-bottom: 60px;
+    }
+    section#o-que-fazemos p{
+        padding: 20px 0 20px 0;
+    }
+
+    section#ultimas-noticias{
+        padding: 50px 0 50px 0;
+    }
+
+    main#conteudo-principal h3, section#ultimas-noticias h3, section#banner1 h3, section#companias .conteudo-compania h3, section#depoimentos h3, footer#rodape h3{
+        font-size: 0.9em;
+    }
+    header#cabecalho nav div#navbarSupportedContent a#btn-transparente, header#cabecalho nav div#navbarSupportedContent a.btn-azul, main#conteudo-principal a.btn-azul, section#ultimas-noticias a.btn-azul, section#depoimentos a.btn-azul{
+        border-radius: 15px;
+        padding: 1px 10px 1px 10px;
+        border: solid 3px #0070b5;
+        font-weight: bold;
+        font-size: 0.7em;
+        text-transform: uppercase;
+    }
+ }
+
+/* Dispositivos small (telefones em modo paisagem, com 576px ou mais) */
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+/* Dispositivos médios (tablets com 768px ou mais) */
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+/* Dispositivos large (desktops com 992px ou mais) */
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+/* Dispositivos extra large (desktops grandes com 1200px ou mais) */
+@media (min-width: 1200px) { ... }
