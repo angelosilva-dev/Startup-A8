@@ -4,6 +4,7 @@ body{
 }
 
 /* **************Cabeçalho do Site******************** */
+
 header#cabecalho nav div#navbarSupportedContent ul li a{
     color: #fd8ab1;
     font-weight: bold;
@@ -25,6 +26,7 @@ section#depoimentos a.btn-azul
     font-weight: bold;
     font-size: 0.8em;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 header#cabecalho nav div#navbarSupportedContent a#btn-transparente{
     color: #0070b5;
@@ -43,8 +45,8 @@ main#conteudo-principal{
     background: url('../img/wave-blue.png') repeat-x bottom;
 }
 main#conteudo-principal img#titulo-img{
-    margin: 80px 0 40px 0;
-    width: 500px
+    margin: 30px 0 50px 0;
+    width: 70%
 }
 main#conteudo-principal h3, section#ultimas-noticias h3, section#banner1 h3,
 section#companias .conteudo-compania h3, section#depoimentos h3, footer#rodape h3{
@@ -119,7 +121,6 @@ section#banner1 p{
     color: white;
     font-weight: bold;
     font-size: 0.8em;
-    padding-right: 130px;
 }
 section#banner1 a#btn-azul {
     width: 140px;
@@ -142,7 +143,7 @@ section#companias p.parafrafo-topo{
     color: #0070b5;
     font-weight: 600;
     font-size: 0.9em;
-
+    text-align: center;
 }
 section#companias .caixa-companias{
     padding: 20px;
@@ -244,22 +245,19 @@ footer#rodape p{
 
 /* Dispositivos extra small (telefones em modo retrato, com menos de 576px) */
 @media (max-width: 575.98px) {
-    section#o-que-fazemos h2, section#banner1 h2, section#banner2 h2{
-        font-size: 2em;
-    }
-    section#o-que-fazemos{
-        padding-bottom: 60px;
-    }
-    section#o-que-fazemos p{
-        padding: 20px 0 20px 0;
-    }
 
-    section#ultimas-noticias{
-        padding: 50px 0 50px 0;
+    main#conteudo-principal div.banner-principal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
-
-    main#conteudo-principal h3, section#ultimas-noticias h3, section#banner1 h3, section#companias .conteudo-compania h3, section#depoimentos h3, footer#rodape h3{
+    main#conteudo-principal p, section#ultimas-noticias p, section#companias .conteudo-compania p, section#depoimentos p{
         font-size: 0.9em;
+    }
+  
+    main#conteudo-principal h3, section#ultimas-noticias h3, section#banner1 h3, section#companias .conteudo-compania h3, section#depoimentos h3, footer#rodape h3{
+        font-size: 1.1em;
     }
     header#cabecalho nav div#navbarSupportedContent a#btn-transparente, header#cabecalho nav div#navbarSupportedContent a.btn-azul, main#conteudo-principal a.btn-azul, section#ultimas-noticias a.btn-azul, section#depoimentos a.btn-azul{
         border-radius: 15px;
@@ -269,6 +267,61 @@ footer#rodape p{
         font-size: 0.7em;
         text-transform: uppercase;
     }
+    section#o-que-fazemos h2, section#banner1 h2, section#banner2 h2{
+        font-size: 2em;
+    }
+    section#o-que-fazemos{
+        padding: 20px 20px;
+    }
+    section#o-que-fazemos p{
+        padding: 20px 0 20px 0;
+    }
+
+    section#ultimas-noticias{
+        padding: 50px 0 50px 0;
+    }
+
+    section#ultimas-noticias img#titulo-noticias{
+        margin-bottom: 15px;
+    }
+    section#banner1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px 20px;
+    }
+    section#banner1 img.img-banner1{
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    section#banner1 p{
+        text-align: center;
+    }
+
+    section#companias img.img-companias{
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+
+
+    section#depoimentos {
+        padding: 50px 0 70px 0;
+        text-align: center;
+    }
+
+    footer#rodape div.rodape-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    footer#rodape div.rodape-flex div.col-3{
+
+    }
+
  }
 
 /* Dispositivos small (telefones em modo paisagem, com 576px ou mais) */
