@@ -299,29 +299,44 @@ footer#rodape p{
         text-align: center;
     }
 
+    section#banner2 {
+        padding: 30px 0 0 0;
+    }
+
+    section#banner2 img.img-banner2{
+        width: 70%
+    }
+
+    div.flex-order{
+        display: flex;
+        flex-direction: column;
+    } 
+    div.flex-order #btn-banner2{
+        margin-bottom: 15px;
+    }
+    div.flex-order > #order-3{
+        order: 3;
+    }
+
     section#companias img.img-companias{
         width: 70%;
         margin-bottom: 20px;
     }
-
-
 
     section#depoimentos {
         padding: 50px 0 70px 0;
         text-align: center;
     }
 
-    footer#rodape div.rodape-flex {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
+    footer#rodape{
+        padding: 30px 0 50px 0;
     }
-
-    footer#rodape div.rodape-flex div.col-3{
-
+    footer#rodape h3 {
+        font-size: 0.8em;
     }
-
+    footer#rodape ul li a{
+        font-size: 0.7em;
+    }
  }
 
 /* Dispositivos small (telefones em modo paisagem, com 576px ou mais) */
