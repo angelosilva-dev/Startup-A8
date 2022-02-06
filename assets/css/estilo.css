@@ -43,6 +43,7 @@ main#conteudo-principal a.btn-azul
 /* **********Conteudo principal********* */
 main#conteudo-principal{
     background: url('../img/wave-blue.png') repeat-x bottom;
+    margin-bottom: -2px;
 }
 main#conteudo-principal img#titulo-img{
     margin: 30px 0 50px 0;
@@ -189,6 +190,7 @@ section#banner2 a{
 section#depoimentos{
     padding: 150px 0 150px 0;
     background: url('../img/wave-blue-footer.png') repeat-x bottom;
+    margin-bottom: -2px;
 }
 
 section#depoimentos img{
@@ -253,7 +255,7 @@ footer#rodape p{
         text-align: center;
     }
     main#conteudo-principal p, section#ultimas-noticias p, section#companias .conteudo-compania p, section#depoimentos p{
-        font-size: 0.9em;
+        font-size: 0.8em;
     }
   
     main#conteudo-principal h3, section#ultimas-noticias h3, section#banner1 h3, section#companias .conteudo-compania h3, section#depoimentos h3, footer#rodape h3{
@@ -340,13 +342,140 @@ footer#rodape p{
  }
 
 /* Dispositivos small (telefones em modo paisagem, com 576px ou mais) */
-@media (min-width: 576px) and (max-width: 767.98px) { ... }
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+    main#conteudo-principal div.banner-principal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    main#conteudo-principal p, section#ultimas-noticias p, section#companias .conteudo-compania p, section#depoimentos p{
+        font-size: 0.8em;
+    }
+  
+    main#conteudo-principal h3, section#ultimas-noticias h3, section#banner1 h3, section#companias .conteudo-compania h3, section#depoimentos h3, footer#rodape h3{
+        font-size: 1.1em;
+    }
+    header#cabecalho nav div#navbarSupportedContent a#btn-transparente, header#cabecalho nav div#navbarSupportedContent a.btn-azul, main#conteudo-principal a.btn-azul, section#ultimas-noticias a.btn-azul, section#depoimentos a.btn-azul{
+        border-radius: 15px;
+        padding: 1px 10px 1px 10px;
+        border: solid 3px #0070b5;
+        font-weight: bold;
+        font-size: 0.7em;
+        text-transform: uppercase;
+    }
+    section#o-que-fazemos h2, section#banner1 h2, section#banner2 h2{
+        font-size: 2em;
+    }
+    section#o-que-fazemos{
+        padding: 20px 20px;
+    }
+    section#o-que-fazemos p{
+        padding: 20px 0 20px 0;
+    }
+
+    section#ultimas-noticias{
+        padding: 50px 0 50px 0;
+    }
+
+    section#ultimas-noticias img#titulo-noticias{
+        margin-bottom: 15px;
+    }
+    section#banner1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px 20px;
+    }
+    section#banner1 img.img-banner1{
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    section#banner1 p{
+        text-align: center;
+    }
+
+    section#banner2 {
+        padding: 30px 0 0 0;
+    }
+
+    section#banner2 img.img-banner2{
+        width: 70%
+    }
+
+    div.flex-order{
+        display: flex;
+        flex-direction: column;
+    } 
+    div.flex-order #btn-banner2{
+        margin-bottom: 15px;
+    }
+    div.flex-order > #order-3{
+        order: 3;
+    }
+
+    section#companias img.img-companias{
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    section#depoimentos {
+        padding: 50px 0 70px 0;
+        text-align: center;
+    }
+
+    footer#rodape{
+        padding: 30px 0 50px 0;
+    }
+    footer#rodape h3 {
+        font-size: 0.8em;
+    }
+    footer#rodape ul li a{
+        font-size: 0.7em;
+    }
+ }
 
 /* Dispositivos médios (tablets com 768px ou mais) */
-@media (min-width: 768px) and (max-width: 991.98px) { ... }
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    main#conteudo-principal{
+        padding-bottom: 80px; 
+        margin-bottom: -1px;
+    }
+    section#companias img.img-companias{
+        width: 60%;
+        margin-bottom: 20px;
+    }
+    section#o-que-fazemos h2, section#banner1 h2{
+        font-size: 4em;
+    }
+    section#banner2{
+        padding-top: 20px;
+    }
+    section#banner2 h2{
+        font-size: 3em;
+    }
+
+    div.flex-order{
+        display: flex;
+        flex-direction: row;
+    } 
+    div.flex-order  #order-3{
+        align-self: flex-end;    
+    }
+}
 
 /* Dispositivos large (desktops com 992px ou mais) */
-@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    main#conteudo-principal{
+        margin-bottom: -1px;
+    }
+}
 
 /* Dispositivos extra large (desktops grandes com 1200px ou mais) */
-@media (min-width: 1200px) { ... }
+@media (min-width: 1200px) { 
+    main#conteudo-principal{
+        margin-bottom: -1px;
+    }
+ }
